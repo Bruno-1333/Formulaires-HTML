@@ -19,8 +19,8 @@
         <h2>Informations de Contact</h2>
         <div class="section1">
             <label>Nom<input name="nom" type="text" required/></label><br/>
-            <label>courriel<input name="courriel"  type="email" required/></label><br/>
-            <label>Province <select>name="province" type="text" required/></label><br/>
+            <label>courriel<input name="courriel"  type="email" required placeholder="user@domaine.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/></label><br/>
+            <label>Province <select>name="province" type="text" required/><br/>
             <option value=""></option>
             <option value="Quebec">quebec</option>
             <option value="Ontario">Ontario</option>
@@ -32,7 +32,7 @@
             <option value="saskatchewan">saskatchewan</option>
             <option value="Nunavut">Nunavut</option>
             <option value="Colombie-Britannique">Colombie-Britannique </option>
-            </select>
+            </select></label>
         </div>
 
         <h2>Informations de paiements</h2>
@@ -40,7 +40,7 @@
             <label>Type de paiement:&nbsp; <input type="radio" name="typePaiement" value="Visa">&nbsp;Visa&nbsp;</input>
                 <input type="radio"  name="typePaiement" value="MasterCard" >&nbsp;MasterCard&nbsp;</input>
                 <input type="radio" name="typePaiement" value="American Express" >&nbsp;American Express</input>   </label><br/>
-            <label>Numéro :&nbsp;<input name="numCarte" type="text" required /></label><br/>
+            <label>Numéro :&nbsp;<input name="numCarte" type="text" required placeholder="9999-9999-9999-9999" pattern="^(?:(?:\d{4}[- ]){3}\d{4}|\d{16})$"/></label><br/>
         </div>
 
         <h2>Informations de livraison</h2>
@@ -49,7 +49,7 @@
             <label><input type="checkbox" name="Livraison">Livrer a la meme adresse de paiement</label><br/>
         </div>
         <div class="bouton">
-            <input class="bouton1" type="submit" value="Envoyer" onclick="return valider()" />
+            <input class="bouton1" type="submit" value="Envoyer" />
             <input class="bouton1" type="reset" value="Annuler">
         </div>
 
