@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <script src="Main.js"></script>
+
+    <title>Les Beaux Formulaires de Yan</title>
+
+</head>
+
+<body>
+
+
+<div class="border">
+    <form action="post" action="facturation">
+
+        <h1> Fomulaire de paiement</h1>
+        <h2>Informations de Contact</h2>
+        <div class="section1">
+            <label>Nom<input name="nom" type="text" required/></label><br/>
+            <label>courriel<input name="courriel"  type="email" required/></label><br/>
+            <label>Province <select>name="province" type="text" required/></label><br/>
+            <option value=""></option>
+            <option value="Quebec">quebec</option>
+            <option value="Ontario">Ontario</option>
+            <option value="Alberta">Alberta</option>
+            <option value="Île-du-Prince-Édouard">Île-du-Prince-Édouard</option>
+            <option value="Nouveau-Brunswick">Nouveau-Brunswick</option>
+            <option value="Nouvelle-Écosse">Nouvelle-Écosse</option>
+            <option value="Manitoba">Manitoba</option>
+            <option value="saskatchewan">saskatchewan</option>
+            <option value="Nunavut">Nunavut</option>
+            <option value="Colombie-Britannique">Colombie-Britannique </option>
+            </select>
+        </div>
+
+        <h2>Informations de paiements</h2>
+        <div class="section2">
+            <label>Type de paiement:&nbsp; <input type="radio" name="typePaiement" value="Visa">&nbsp;Visa&nbsp;</input>
+                <input type="radio"  name="typePaiement" value="MasterCard" >&nbsp;MasterCard&nbsp;</input>
+                <input type="radio" name="typePaiement" value="American Express" >&nbsp;American Express</input>   </label><br/>
+            <label>Numéro :&nbsp;<input name="numCarte" type="text" required /></label><br/>
+        </div>
+
+        <h2>Informations de livraison</h2>
+        <div class="section3">
+            <label><input type="checkbox" name="signature">Signature requise</label><br/>
+            <label><input type="checkbox" name="Livraison">Livrer a la meme adresse de paiement</label><br/>
+        </div>
+        <div class="bouton">
+            <input class="bouton1" type="submit" value="Envoyer" onclick="return valider()" />
+            <input class="bouton1" type="reset" value="Annuler">
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

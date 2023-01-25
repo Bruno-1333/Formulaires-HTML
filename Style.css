@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-size: 1rem;
+
+}
+h2{
+    padding-top: 20px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: dimgray;
+    margin-left: 10px;
+}
+h1{
+    font-family: sans-serif;
+    font-weight: normal;
+    color: dimgray;
+
+    padding: 0;
+}
+.border{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 12px;
+    color: grey;
+    width: 677px;
+    margin: 15rem auto;
+    padding: 15px;
+}
+.section1 , .section2, .section3{
+    margin: auto;
+    border-style: solid;
+    border-width: 2px;
+    width: 635px;
+    padding: 15px;
+
+}
+.bouton{
+    margin:auto auto;
+    width: 100px;
+    display: flex;
+    padding-top: 20px;
+
+
+}
+.bouton1 {
+    margin-right:10px ;
+    padding:10px ;
+    font-size: 14px;
+    border-radius: 0px;
+}
+input{
+    margin-bottom: 10px;
+
+}
